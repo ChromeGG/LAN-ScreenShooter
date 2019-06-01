@@ -1,0 +1,1 @@
+javaw -cp LAN-Client-App.jar com.company.Main
