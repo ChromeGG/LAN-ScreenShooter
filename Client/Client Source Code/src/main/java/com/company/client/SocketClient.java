@@ -3,7 +3,6 @@ package com.company.client;
 import com.company.screenShoter.SSmaker;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.io.*;
@@ -72,12 +71,7 @@ public class SocketClient {
     }
 
     private void sendSS(String encodedString) {
-
-//        byte[] fileContent = FileUtils.readFileToByteArray(new File("screenshot.jpg"));
-//        String encodedString = Base64.getEncoder().encodeToString(fileContent);
-
         out.println(encodedString);
-
     }
 
     private static String imgToBase64String(final RenderedImage img, final String formatName) {
